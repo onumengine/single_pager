@@ -56,6 +56,10 @@ div#pageContent {
     top: 68px;
 }
 
+div#prevButton {
+    display: none;
+}
+
 header {
     position: fixed;
     top: 0px;
@@ -63,7 +67,7 @@ header {
     width: 100%;    
     background-color: white;
     opacity: 1;
-    z-index: 2;
+    z-index: 3;
     padding-left: 40px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -120,8 +124,30 @@ img {
         grid-gap: none;
     }
 
+    div#prevButton {
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: #111827;
+        opacity: 0.8;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 4px 4px 4px 4px;
+        z-index: 2;
+        position: relative;
+        right: -25px;
+        top: 400px;
+    }
 
     div#slotsDiv {
         padding: 0;
+    }
+
+    header img {
+        height: 100px
+    }
+
+    img#interiorImage {
+        display: none;
     }
 }

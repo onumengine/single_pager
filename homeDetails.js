@@ -12,9 +12,15 @@ window.onclick = function(event) {
     } 
 }
 
+var mobileImageSources = [
+    "img/home_exterior.png",
+    "img/home_interior.png"
+];
+
 function init() {
     var dropdownButtons = document.getElementsByClassName("dropdownButton")
     var dropdownItems = document.getElementsByClassName("dropdownItem");
+    var skipButton = document.getElementById("prevButton");
 
 
     hideAllDropdowns();
@@ -28,6 +34,8 @@ function init() {
     for (let item of dropdownItems) {
         item.onclick = changeDropdownButtonLabel;
     }
+
+    skipButton.onclick = toggleImageSource;
     
 }
 
@@ -88,5 +96,14 @@ function changeDropdownButtonLabel(event) {
         categoriesButton.innerHTML = clickedItemText;
     } else if (clickedItem.matches('.slotsDropdownItem')) {
         slotsButton.innerHTML = clickedItemText
+    }
+}
+
+function toggleImageSource() {
+    var exteriorImage = document.getElementById('exteriorImage');
+    if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
+        exteriorImage.setAttribute('src', mobileImageSources[1]);
+    } else {
+        exteriorImage.setAttribute('src', mobileImageSources[0]);
     }
 }

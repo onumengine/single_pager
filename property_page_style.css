@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1F2937;
+}
+
+body div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#bannerSection {
+    max-width: fit-content;
+}
+
+div.dropdown {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: none;
+    text-align: start;
+    box-shadow: 0px 8px 8px 8px #D1D5DB;
+}
+
+div#form {
+    border: none;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+div#slotsDiv {
+    text-align: start;
+}
+
+.dropdownButton {
+    background-color: gray;
+    width: 400px;
+    cursor: pointer;
+    border-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    background-color: inherit;
+    font-size: 16px;
+    padding: 8px;
+    text-align: start;
+    color: inherit;
+}
+
+.dropdownButton:hover {
+    border-width: 2px;
+    border-color: orange;
+}
+
+.dropdownItem {
+    width: 400px;
+    border: none;
+    background-color: inherit;
+    padding: 8px;
+    font-size: 16px;
+    text-align: start;
+    color: inherit;
+}
+
+input#slotsInput {
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
